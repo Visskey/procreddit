@@ -1,0 +1,285 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!--
+* PyWebCopy Engine [version 7.0.2]
+* Copyright 2020; Raja Tomar
+* File mirrored from [https://ebanking.procreditbank-kos.com/User/Logon]
+* At UTC datetime: [2022-10-29 19:16:42.870391]
+--><head id="Head1" runat="server">
+    <title>
+        Hyrje n&#235; Procredit Bank e-Banking
+    </title>
+    <script type="text/javascript">
+    !function (T, l, y) { var S = T.location, k = "script", D = "instrumentationKey", C = "ingestionendpoint", I = "disableExceptionTracking", E = "ai.device.", b = "toLowerCase", w = "crossOrigin", N = "POST", e = "appInsightsSDK", t = y.name || "appInsights"; (y.name || T[e]) && (T[e] = t); var n = T[t] || function (d) { var g = !1, f = !1, m = { initialize: !0, queue: [], sv: "5", version: 2, config: d }; function v(e, t) { var n = {}, a = "Browser"; return n[E + "id"] = a[b](), n[E + "type"] = a, n["ai.operation.name"] = S && S.pathname || "_unknown_", n["ai.internal.sdkVersion"] = "javascript:snippet_" + (m.sv || m.version), { time: function () { var e = new Date; function t(e) { var t = "" + e; return 1 === t.length && (t = "0" + t), t } return e.getUTCFullYear() + "-" + t(1 + e.getUTCMonth()) + "-" + t(e.getUTCDate()) + "T" + t(e.getUTCHours()) + ":" + t(e.getUTCMinutes()) + ":" + t(e.getUTCSeconds()) + "." + ((e.getUTCMilliseconds() / 1e3).toFixed(3) + "").slice(2, 5) + "Z" }(), iKey: e, name: "Microsoft.ApplicationInsights." + e.replace(/-/g, "") + "." + t, sampleRate: 100, tags: n, data: { baseData: { ver: 2 } } } } var h = d.url || y.src; if (h) { function a(e) { var t, n, a, i, r, o, s, c, u, p, l; g = !0, m.queue = [], f || (f = !0, t = h, s = function () { var e = {}, t = d.connectionString; if (t) for (var n = t.split(";"), a = 0; a < n.length; a++) { var i = n[a].split("="); 2 === i.length && (e[i[0][b]()] = i[1]) } if (!e[C]) { var r = e.endpointsuffix, o = r ? e.location : null; e[C] = "https://" + (o ? o + "." : "") + "dc." + (r || "services.visualstudio.com") } return e }(), c = s[D] || d[D] || "", u = s[C], p = u ? u + "/v2/track" : d.endpointUrl, (l = []).push((n = "SDK LOAD Failure: Failed to load Application Insights SDK script (See stack for details)", a = t, i = p, (o = (r = v(c, "Exception")).data).baseType = "ExceptionData", o.baseData.exceptions = [{ typeName: "SDKLoadFailed", message: n.replace(/\./g, "-"), hasFullStack: !1, stack: n + "\nSnippet failed to load [" + a + "] -- TelConnectionStringConnectionStringnectionStringConnectionStringemetry is disabled\nHelp Link: https://go.microsoft.com/fwlink/?linkid=2128109\nHost: " + (S && S.pathname || "_unknown_") + "\nEndpoint: " + i, parsedStack: [] }], r)), l.push(function (e, t, n, a) { var i = v(c, "Message"), r = i.data; r.baseType = "MessageData"; var o = r.baseData; return o.message = 'AI (Internal): 99 message:"' + ("SDK LOAD Failure: Failed to load Application Insights SDK script (See stack for details) (" + n + ")").replace(/\"/g, "") + '"', o.properties = { endpoint: a }, i }(0, 0, t, p)), function (e, t) { if (JSON) { var n = T.fetch; if (n && !y.useXhr) n(t, { method: N, body: JSON.stringify(e), mode: "cors" }); else if (XMLHttpRequest) { var a = new XMLHttpRequest; a.open(N, t), a.setRequestHeader("Content-type", "application/json"), a.send(JSON.stringify(e)) } } }(l, p)) } function i(e, t) { f || setTimeout(function () { !t && m.core || a() }, 500) } var e = function () { var n = l.createElement(k); n.src = h; var e = y[w]; return !e && "" !== e || "undefined" == n[w] || (n[w] = e), n.onload = i, n.onerror = a, n.onreadystatechange = function (e, t) { "loaded" !== n.readyState && "complete" !== n.readyState || i(0, t) }, n }(); y.ld < 0 ? l.getElementsByTagName("head")[0].appendChild(e) : setTimeout(function () { l.getElementsByTagName(k)[0].parentNode.appendChild(e) }, y.ld || 0) } try { m.cookie = l.cookie } catch (p) { } function t(e) { for (; e.length;)!function (t) { m[t] = function () { var e = arguments; g || m.queue.push(function () { m[t].apply(m, e) }) } }(e.pop()) } var n = "track", r = "TrackPage", o = "TrackEvent"; t([n + "Event", n + "PageView", n + "Exception", n + "Trace", n + "DependencyData", n + "Metric", n + "PageViewPerformance", "start" + r, "stop" + r, "start" + o, "stop" + o, "addTelemetryInitializer", "setAuthenticatedUserContext", "clearAuthenticatedUserContext", "flush"]), m.SeverityLevel = { Verbose: 0, Information: 1, Warning: 2, Error: 3, Critical: 4 }; var s = (d.extensionConfig || {}).ApplicationInsightsAnalytics || {}; if (!0 !== d[I] && !0 !== s[I]) { var c = "onerror"; t(["_" + c]); var u = T[c]; T[c] = function (e, t, n, a, i) { var r = u && u(e, t, n, a, i); return !0 !== r && m["_" + c]({ message: e, url: t, lineNumber: n, columnNumber: a, error: i }), r }, d.autoExceptionInstrumented = !0 } return m }(y.cfg); function a() { y.onInit && y.onInit(n) } (T[t] = n).queue && 0 === n.queue.length ? (n.queue.push(a), n.trackPageView({})) : a() }(window, document, {
+        src: "https://js.monitor.azure.com/scripts/b/ai.2.min.js", // The SDK URL Source
+        // name: "appInsights", // Global SDK Instance name defaults to "appInsights" when not supplied
+        // ld: 0, // Defines the load delay (in ms) before attempting to load the sdk. -1 = block page load and add to head. (default) = 0ms load after timeout,
+        // useXhr: 1, // Use XHR instead of fetch to report failures (if available),
+        //crossOrigin: "anonymous", // When supplied this will add the provided value as the cross origin attribute on the script tag
+        // onInit: null, // Once the application insights instance has loaded and initialized this callback function will be called with 1 argument -- the sdk instance (DO NOT ADD anything to the sdk.queue -- As they won't get called)
+        cfg: { // Application Insights Configuration
+            instrumentationKey: "4d6cd2fa-ee3a-47a2-9519-6900e2ea394a",
+            connectionString: "InstrumentationKey=4d6cd2fa-ee3a-47a2-9519-6900e2ea394a;IngestionEndpoint=https://westeurope-1.in.applicationinsights.azure.com/",
+            disableTelemetry : false
+        }
+    });
+</script>
+    <link href="../../fonts.googleapis.com/css_family_Noto_Sans.css" rel="stylesheet">
+    <link href="../content/css_v_jn5kbSWA1cqvhzMUcgsJCxfBKCmqshgHo_EfFnIOUOU1.css" rel="stylesheet">
+
+    
+<meta name="format-detection" content="telephone=no">
+<meta name="google" content="notranslate">
+<link rel="shortcut icon" href="../Content/Images/favicon.ico">
+<link rel="icon" href="../Content/Images/Procredit-Logo-144.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="../Content/Images/Procredit-Logo-114.jpg.jpeg">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="../Content/Images/Procredit-Logo-72.jpg.jpeg">
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../Content/Images/Procredit-Logo-144.jpg.jpeg">
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="../Content/Images/Procredit-Logo-57.jpg.jpeg">
+<meta name="msapplication-TileImage" content="/Content/Images/Procredit-Logo-144.png">
+<meta name="msapplication-TileColor" content="#d83434">
+<meta name="keywords" content="Ebanking, ProcreditBank, Llogari kursimi, depozit&#235; me afat, kredi, llogari rrjedh&#235;se">
+<meta name="description" content="Me online banking ne ProCredit Bank ju mund te menaxhoni lehtesisht aktivitetet tuaja bankare">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+
+    <script type="text/javascript">
+        function UrlContent(path) {
+            return '/' + path.replace(/^\//, '');
+        }
+    </script>
+    <script src="../bundles/main_v_Ry2yaaDr6Zpxao7euriWiay1rC9m_Ski6uZ1ua4ZM901.mjs"></script>
+<script src="../bundles/button_v_gRhZqI6zhPitXH5AVAYrpOezw2QqYLa0uxKzmyaE5Qw1.mjs"></script>
+<script src="../bundles/sq_v_BV1HVh_-gydV5wKbLYLyzgb9OSPQBRyGFLAuRSdplOM1.mjs"></script>
+<script src="../bundles/sq-AL_v_92euiki3hmBRhRoxSWltk_uBaT4LXpiP3MvLowQAdi41.mjs"></script>
+
+    
+
+    
+        <link rel="alternate" href="./LogOn.html" hreflang="en-NZ">
+        <link rel="alternate" href="./LogOn.html" hreflang="sq-AL">
+        <link rel="alternate" href="./LogOn.html" hreflang="sr-Latn-CS">
+
+
+</head>
+<body>
+    <noscript>
+    <div class="javascriptErrorHeader">
+        <div class="javascriptErrorSubHeader">
+            e-Banking nuk funksionon mir&#235; n&#235;se JavaScript nuk &#235;sht&#235; i lejuar
+        </div>
+    </div>
+</noscript>
+
+<div id="oldbrowsermessage" class="is-hidden">
+    <div class="javascriptErrorHeader">
+        <div class="javascriptErrorSubHeader">
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    if (navigator.userAgent.toUpperCase().indexOf("MSIE") != -1) {
+        $('#oldbrowsermessage').removeClass('is-hidden');
+        $('.javascriptErrorSubHeader').html('e-Banking nuk funksionon mir&#235; me shfletues t&#235; vjet&#235;r. Ju lutemi kujdesuni q&#235; shfletuesi i juaj &#235;sht&#235; I p&#235;rdit&#235;suar apo provoni me nj&#235; shfletues tjet&#235;r.');
+    }
+</script>
+    
+    <header class="header noPrint">
+        <div class="l-section">
+            <div class="header__logo">
+                <a href="http://www.procreditbank-kos.com/">
+                    <img class="header__logo_icon" src="../Content/Images/icons/img_trans.gif" title="Kosovo">
+                </a>
+            </div>
+            <div class="l-container l-content-header">
+                <div id="mobilemenu"></div>
+            </div>
+        </div>
+    </header>
+        <ul id="mobilemenuhidden"></ul>
+    <div id="maincontentwrapper">
+        <div id="navbar">
+            <div class="menuTitle">
+                <span class="menuParentText" id="desktopmenubutton">
+                    <img src="../Content/Images/icons/img_trans.gif" class="menuIcon">
+                    <span class="menuText">
+                        Meny
+                    </span>
+                </span>
+            </div>
+            <div id="subnavbar">
+                
+        <div data-menuid="101" class="selectedMenu">
+            <div class="menuParent">
+                <span class="menuParentText">
+                    e-Banking
+                </span>
+                <img class="carat carat-u" src="../Content/Images/icons/img_trans.gif">
+            </div>
+            <div class="childrenMenus">
+            </div>
+        </div>
+        <li class="externalLinksForMobile">
+            e-Banking
+            <ul>
+            </ul>
+        </li>
+        <div data-menuid="201" class="selectedMenu">
+            <div class="menuParent">
+                <span class="menuParentText">
+                    Siguria e informacionit
+                </span>
+                <img class="carat carat-u" src="../Content/Images/icons/img_trans.gif">
+            </div>
+            <div class="childrenMenus">
+                        <div class="menuChild ">
+                            <a class="menuLinkStyle" href="https://www.procreditbank-kos.com/shq/siguria-e-informacionit/si-ju-mbrojme/" target="_blank">
+                                Si ju mbron&#235; Banka?
+                            </a>
+                        </div>
+                        <div class="menuChild ">
+                            <a class="menuLinkStyle" href="https://www.procreditbank-kos.com/shq/siguria-e-informacionit/masat-qe-duhet-te-merrni-per-tu-mbrojtur/" target="_blank">
+                                Masat p&#235;r t&#235; u mbrojtur
+                            </a>
+                        </div>
+                        <div class="menuChild ">
+                            <a class="menuLinkStyle" href="https://www.procreditbank-kos.com/shq/siguria-e-informacionit/raportimi-i-mashtrimit/" target="_blank">
+                                Raportimi i mashtrimit
+                            </a>
+                        </div>
+                        <div class="menuChild ">
+                            <a class="menuLinkStyle" href="https://ebanking.procreditbank-kos.com/externallinks/Raportimi_postes_elektronike.pdf" target="_blank">
+                                Raportimi i post&#235;s elektronike
+                            </a>
+                        </div>
+            </div>
+        </div>
+        <li class="externalLinksForMobile">
+            Siguria e informacionit
+            <ul>
+                        <li class=""><a href="https://www.procreditbank-kos.com/shq/siguria-e-informacionit/si-ju-mbrojme/" target="_blank"> Si ju mbron&#235; Banka?</a></li>
+                        <li class=""><a href="https://www.procreditbank-kos.com/shq/siguria-e-informacionit/masat-qe-duhet-te-merrni-per-tu-mbrojtur/" target="_blank"> Masat p&#235;r t&#235; u mbrojtur</a></li>
+                        <li class=""><a href="https://www.procreditbank-kos.com/shq/siguria-e-informacionit/raportimi-i-mashtrimit/" target="_blank"> Raportimi i mashtrimit</a></li>
+                        <li class=""><a href="https://ebanking.procreditbank-kos.com/externallinks/Raportimi_postes_elektronike.pdf" target="_blank"> Raportimi i post&#235;s elektronike</a></li>
+            </ul>
+        </li>
+        <div data-menuid="206" class="selectedMenu">
+            <div class="menuParent">
+                <span class="menuParentText">
+                    Versioni mobil
+                </span>
+                <img class="carat carat-u" src="../Content/Images/icons/img_trans.gif">
+            </div>
+            <div class="childrenMenus">
+                        <div class="menuChild ">
+                            <a class="menuLinkStyle" href="https://ebanking.procreditbank-kos.com/mobile/user/LogOn" target="_blank">
+                                Versioni mobil
+                            </a>
+                        </div>
+            </div>
+        </div>
+        <li class="externalLinksForMobile">
+            Versioni mobil
+            <ul>
+                        <li class=""><a href="https://ebanking.procreditbank-kos.com/mobile/user/LogOn" target="_blank"> Versioni mobil</a></li>
+            </ul>
+        </li>
+
+            </div>
+        </div>
+        <div id="maincontent">
+            
+
+<h3 class="l-section extramargin">
+    Hyrje
+</h3>
+<div>
+
+</div>
+<div class="l-section readonlycontenttext">
+    <div class="l-section2columns l-sectioncolumn-responsive navbarbackground barseparatordown">
+        <div class="l-section extramargin">
+            <div class="l-section33percent">
+                Zgjedhni gjuh&#235;n
+            </div>
+            <div class="l-section66percent">
+                <div class="xxlarge">
+                    <span class="l-floatright">
+<a href="https://ebanking.procreditbank-kos.com/User/ChangeLanguage?Language=en-NZ" title="English">English</a>                                    |
+                                    <b>
+                                        Shqip
+                                    </b>
+                                    |
+<a href="https://ebanking.procreditbank-kos.com/User/ChangeLanguage?Language=sr-Latn-CS" title="Serbian">Srpski</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="l-section">
+            <div class="l-section33percent">
+<form action="https://ebanking.procreditbank-kos.com/User/LogOn" method="post">
+                <input name="__RequestVerificationToken" type="hidden" value="z9_d-o-HVA8EXxxShGxoagMHswOQqB6WBUTzZkCMOdSl6uH3O9Gr4F2idXfWaZplAXqc2y3RCYyLEvmj5osIyhwS8XzVZqgL-aqLAALL90-IySwnp2Z4t768pCY6GNMab4hsn6G_Tx2ci3Srr4bjyuZWP0T4lAXWA8HVDcuXKWZ4TRiYR90i5Y-cOkG5blHq0">
+                <label for="username">
+                    Emri i p&#235;rdoruesit
+                </label>
+            </form></div>
+            <div class="l-section66percent">
+                <input autocomplete="off" class="xxlarge" id="username" name="username" type="text" value="">
+            </div>
+        </div>
+        <div class="l-section extramargin">
+
+            <div class="l-section33percent">
+                <label for="password">
+                    Fjal&#235;kalimi
+                </label>
+            </div>
+            <div class="l-section66percent">
+                <input autocomplete="off" class="xxlarge" id="password" name="password" type="password" value="">
+            </div>
+        </div>
+
+        <div class="l-section">
+            <div class="l-section66percent">
+                <a href="https://ebanking.procreditbank-kos.com/User/ResetPasswordEnterAll">Resetimi i fjal&#235;kalimit</a>
+
+            </div>
+            <div class="l-section33percent">
+                <div class="xxlarge">
+                    <input class="l-floatright" id="btnlogin" type="submit" value="Hyrje">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="l-section2columns l-sectioncolumn-responsive">
+        <span class="l-floatright l-unset-responsive">
+            <img class="negativemargin width66-responsive" src="../Content/images/optional2.jpg.jpeg">
+        </span>
+    </div>
+</div>
+
+<div class="l-section">
+    
+    <a href="https://www.procreditbank-kos.com/" target="_blank">
+        <img class="padding10Left bordercolor-FFFFFF" src="../Content/images/optional1temp.jpg.jpeg">
+    </a>
+</div>
+
+
+
+
+        </div>
+    </div>
+    <div id="footer">
+        &#169; 2009 -
+2022
+ProCredit Holding
+
+        <span class="hidexsmallscreen" title="4.2.21125.1"> | Version 4.2.4.2  (21125.1)</span>
+        application by Quipu GmbH Frankfurt, Germany
+        <span class="l-floatright">
+            <span class="hidexsmallscreen">29.10.2022 9:16 e pasdites</span>
+        </span>
+    </div>
+    
+<script src="../Scripts/react/dist/main.45f0fc29.js"></script><script src="../Scripts/react/dist/runtime.0c31f1e8.js"></script><script src="../Scripts/react/dist/vendor.fcaf6e12.js"></script><script></script></body>
+</html>
