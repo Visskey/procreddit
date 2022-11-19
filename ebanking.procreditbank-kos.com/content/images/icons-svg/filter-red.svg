@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon/Filter</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M13,11.4852814 L13,19 L11,21 L11,11.4852814 L3.51471863,4 L20.4852814,4 L13,11.4852814 Z" id="path-1"></path>
+    </defs>
+    <g id="Icon/Filter" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Bounding-Box" x="0" y="0" width="24" height="24"></rect>
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="Combined-Shape" fill="#d40e14" xlink:href="#path-1"></use>
+        <g id="Mixin/Fill/Black" mask="url(#mask-2)" fill="#d40e14">
+            <rect id="Rectangle" x="0" y="0" width="24" height="24"></rect>
+        </g>
+    </g>
+</svg>
